@@ -1,0 +1,25 @@
+<div>
+  <form class="searchBar">
+    <mat-form-field class="originCity">
+      <textarea matInput placeholder="Starting City"></textarea>
+    </mat-form-field>
+    <mat-form-field class="endingCity">
+      <textarea matInput placeholder="Ending City"></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="startDate">
+      <input matInput [matDatepicker]="startDate" placeholder="Start date">
+      <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+      <mat-datepicker #startDate></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="endDate">
+      <input matInput [matDatepicker]="endDate" placeholder="End date">
+      <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+      <mat-datepicker #startDate></mat-datepicker>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="budget">
+      <textarea matInput placeholder="Enter budget"></textarea>
+    </mat-form-field>
+  </form>
+</div>
