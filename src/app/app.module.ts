@@ -23,7 +23,7 @@ import { SearchService } from './Search-Services/search.service';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
