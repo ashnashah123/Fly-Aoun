@@ -9,15 +9,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class SearchService {
-
     private resultURL = 'http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/FR/eur/en-US/us/anywhere/anytime/anytime?apikey=prtl6749387986743898559646983194'; 
     
-    results: Result;
 
     constructor(private http: HttpClient) { }
     
     getResult(startingCity, endingCity, startingDate, endingDate): Observable<Result> {
-        this.resultURL = 'http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/'+startingCity+'/eur/'+endingCity+'/us/'+startingDate+'/'+endingDate+'/anytime?apikey=prtl6749387986743898559646983194'
+        this.resultURL = 'http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/JFK/en-US/en-US/us/'+startingDate+'/'+endingDate+'/anytime?apikey=prtl6749387986743898559646983194'
         return this.http.get<Result>(this.resultURL);
     }
 }
