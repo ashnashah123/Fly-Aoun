@@ -1,12 +1,13 @@
-import { Segment } from "./segment";
+import { Itinerary } from "./itinerary";
 import { Carrier } from "./carrier";
 import { Place } from "./place";
+import { LegServer } from "./legServer";
 
 export class Result {
     query: any[];
-    itineraries: any[];
-    legs: any[];
-    segments: Segment[];
+    itineraries: Itinerary[];
+    legs: LegServer[];
+    segments: any[];
     carriers: Carrier[];
     agents: any[];
     places: Place[];

@@ -5,7 +5,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
 import {MatSliderModule} from '@angular/material/slider';
 import {worldMap} from './MapComponent/map.component';
-import {searchBar} from './SearchComponent/search.component';import {MatButtonModule} from '@angular/material/button';
+import {searchBarComponent} from './SearchComponent/search.component';import {MatButtonModule} from '@angular/material/button';
 
 
 import { AppComponent } from './app.component';
@@ -17,7 +17,7 @@ import { SearchService } from './Search-Services/search.service';
   declarations: [
     AppComponent,
     worldMap,
-    searchBar
+    searchBarComponent
   ],
   imports: [
     BrowserModule,
