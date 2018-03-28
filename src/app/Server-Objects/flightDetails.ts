@@ -5,5 +5,4 @@ export class FlightDetails {
     arrivalDateTime: Date;
     carrier: string;
     price: number;
-
 }
